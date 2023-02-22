@@ -11,6 +11,31 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "bidFor",
+						"type": "string"
+					}
+				],
+				"name": "biddingInfo",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -68,7 +93,13 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_auctionFor",
+						"type": "string"
+					}
+				],
 				"name": "bidding",
 				"outputs": [],
 				"stateMutability": "payable",
@@ -89,6 +120,32 @@
 						"internalType": "string[]",
 						"name": "",
 						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "highestBid",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "highestBidder",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -161,11 +218,11 @@
 	},
 	"sources": {
 		"contracts/Auction.sol": {
-			"keccak256": "0x89d4f8da5feca05fdc62692262594dc8746dd2915d4c945c3720486d11821510",
+			"keccak256": "0xf2be54ddfbde719cc192ba78f6d867309c644b9ede22ae4c8540adc7e13c2bf2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3e15245a988d96457119b114c71aefb0a548c288262123fa492b213598d53d02",
-				"dweb:/ipfs/QmR7MLFGCC7Kz3wkaVr5iLb2P6jT5qMu6b8qmraW4VDs4f"
+				"bzz-raw://b30071c1539f21caf5206e935ffb0b892656d101d7be1cef341238db48cc1144",
+				"dweb:/ipfs/QmdBP6xDRmmpoRA6eK1fp3Mt3pY1yUDHjDCcvtGR6AVkA9"
 			]
 		}
 	},
